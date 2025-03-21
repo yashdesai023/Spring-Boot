@@ -38,6 +38,16 @@
             "projectName": "springbootjpa",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-BootapibookApplication<bootapibook>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.api.book.bootapibook.BootapibookApplication",
+            "projectName": "bootapibook",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
         }
     ]
 }
