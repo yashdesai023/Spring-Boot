@@ -26,6 +26,17 @@
             "mainClass": "com.springboot.web.springbootweb.SpringbootwebApplication",
             "projectName": "springbootweb",
             "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=62375 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=springbootweb"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-SpringbootjpaApplication<springbootjpa>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.springboot.jpa.springbootjpa.SpringbootjpaApplication",
+            "projectName": "springbootjpa",
+            "args": "",
             "envFile": "${workspaceFolder}/.env"
         }
     ]
