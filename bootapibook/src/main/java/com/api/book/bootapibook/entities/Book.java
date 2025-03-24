@@ -1,8 +1,22 @@
 package com.api.book.bootapibook.entities;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "Books_List")
 public class Book {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "Book_ID")
     private int id;
+    @Column(name = "Book_Title")
     private String title;
+    @Column(name = "Book_Author")
     private String author;
 
     public Book() {
